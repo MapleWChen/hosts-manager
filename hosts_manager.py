@@ -102,7 +102,7 @@ class HostsManager:
         row1.pack(fill='x', pady=6)
         tk.Label(row1, text='域名:', font=self.font_label,
                  bg=self.colors['card_bg'], fg=self.colors['text'], width=6, anchor='w').pack(side='left')
-        self.domain_var = tk.StringVar(value='fz.modelorg.com')
+        self.domain_var = tk.StringVar(value='')
         self.domain_entry = tk.Entry(row1, textvariable=self.domain_var,
                                      font=self.font_label, relief='solid', bd=1,
                                      highlightthickness=2, highlightcolor='#3498db')
@@ -114,7 +114,7 @@ class HostsManager:
         row2.pack(fill='x', pady=6)
         tk.Label(row2, text='IP:', font=self.font_label,
                  bg=self.colors['card_bg'], fg=self.colors['text'], width=6, anchor='w').pack(side='left')
-        self.ip_var = tk.StringVar(value='180.165.12.31')
+        self.ip_var = tk.StringVar(value='')
         self.ip_entry = tk.Entry(row2, textvariable=self.ip_var,
                                   font=self.font_label, relief='solid', bd=1,
                                   highlightthickness=2, highlightcolor='#3498db')
